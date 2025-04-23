@@ -5,8 +5,8 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12 bg-blue-400">
-        <div className="col-span-9 place-self-center w-full text-center sm:text-left bg-red-400">
+      <div className="grid grid-cols-1 sm:grid-cols-12">
+        <div className="col-span-9 place-self-center w-full text-center sm:text-left">
           <h1 className="text-white text-4xl sm:text-5xl  lg:text-6xl font-extrabold mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-pink-600">
               Hello, I'm {""}
@@ -43,11 +43,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="col-span-3 place-self-center mt-4 lg:mt-0 bg-red-900 left-0">
+        <div className="col-span-3 place-self-center mt-4 lg:mt-0 left-0">
           <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/memoji.png"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute lg:w-[330px] transform -translate-x-1/2 -translate-y-1/4 top-1/4 left-1/2"
               alt="hero image"
               width={250}
               height={250}
