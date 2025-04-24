@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import NavLink from "./NavLink";
+import NavigationOverlay from "./NavigationOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { linkObjTyoe } from "../tyoes";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const navLinks: { title: string; path: string }[] = [
+  const navLinks: linkObjTyoe[] = [
     { title: "About", path: "#about" },
     { title: "Projects", path: "#projects" },
     { title: "Contact", path: "#contact" },
@@ -33,7 +34,7 @@ const Navbar = () => {
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link, index: number) => (
               <li key={index}>
                 <Link href={link.path} title={link.title}>
                   {link.title}
@@ -43,6 +44,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      {navbarOpen ? <NavigationOverlay links={navLinks}/> : null}
     </nav>
   );
 };
