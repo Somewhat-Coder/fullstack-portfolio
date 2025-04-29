@@ -31,20 +31,20 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             This is a dummy text
           </p>
-          <div>
-            <button className="px-5 py-3 font-semibold mr-4 w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-              <span>Hire Me</span>
+          <div className="flex sm:flex-row flex-col items-center justify-start sm:gap-x-4 gap-y-4">
+            <button className="px-5 py-3 font-semibold w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+              <span className="text-normal md:text-2xl">Hire Me</span>
             </button>
-            <button className="px-1 py-1 w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 mt-3">
-              <span className="block font-semibold bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2 text-white">
+            <button className="px-1 py-1 w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800">
+              <span className="block font-semibold bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-2 text-white text-normal md:text-2xl">
                 Download CV
               </span>
             </button>
           </div>
         </div>
 
-        <div className="col-span-5 mt-5 sm:mt-0 md:mt-0 place-items-center">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="col-span-5 mt-5 sm:mt-0 md:mt-0 grid place-items-center sm:place-items-end">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-1 border-slate-200">
             <Image
               src="/images/memoji.png"
               className="absolute lg:w-[330px] transform -translate-x-1/2 -translate-y-1/4 top-1/4 left-1/2"
