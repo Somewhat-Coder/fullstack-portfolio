@@ -5,6 +5,7 @@ type projectTypePropType = {
   isSelected: boolean,
   onClick: (name: string) => void;
 };
+
 const ProjectsTab = ({ name, isSelected, onClick }: projectTypePropType) => {
   const buttonStyle = isSelected
     ? `text-white bg-purple-500`

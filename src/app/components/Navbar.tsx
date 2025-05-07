@@ -13,13 +13,13 @@ const Navbar = () => {
     { title: "Contact", path: "#contact" },
   ];
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212]/90 md:p-2">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212]/90 md:p-2 border-b-1 border-t-1 border-slate-700">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-4 sm:px-12 py-2">
         <Link
           href={"/"}
           className="lg:text-5xl text-2xl text-white font-semibold"
         >
-          LOGO
+          Sammam 🚀
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -32,7 +32,7 @@ const Navbar = () => {
           </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
+        <div className="menu hidden md:block md:w-auto text-white lg:text-xl font-semibold" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index: number) => (
               <li key={index}>

@@ -58,7 +58,7 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            About Me
+            About Me 📚
           </h2>
           <p className="text-sm md:text-lg lg:text-xl">
             I am a fullstack developer
