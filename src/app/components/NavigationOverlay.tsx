@@ -8,7 +8,7 @@ const NavigationOverlay = ({
   links: linkObjTyoe[];
 }) => {
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className="flex flex-col py-3 items-center text-md">
       {links.map((link, index: number) => (
         <li key={index}>
           <NavLink href={link.path} title={link.title} />
