@@ -5,6 +5,7 @@ import NavigationOverlay from "./NavigationOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { linkObjTyoe } from "../tyoes";
 import { motion, AnimatePresence } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
