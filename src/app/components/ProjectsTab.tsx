@@ -13,7 +13,7 @@ const ProjectsTab = ({ name, isSelected, onClick }: projectTypePropType) => {
   return (
     <button
       onClick={() => onClick(name)}
-      className={`${buttonStyle} rounded-full px-6 py-3 border-2 text-xl cursor-pointer`}
+      className={`${buttonStyle} rounded-full px-6 py-3 border-2 text-sm md:text-xl cursor-pointer`}
     >
       {name}
     </button>

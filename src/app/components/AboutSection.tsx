@@ -8,14 +8,23 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <div className="grid grid-cols-2 gap-4">
+        <ul className="list-disc pl-2">
+          <li>Next JS</li>
+          <li>React JS</li>
+          <li>Node JS</li>
+          <li>Postgres SQL</li>
+          <li>MongoDB</li>
+          <li>Javascript</li>
+        </ul>
+        <ul className="list-disc pl-2">
+          <li>CI/CD Integrations</li>
+          <li>AWS</li>
+          <li>Azure</li>
+          <li>Git</li>
+          <li>JIRA</li>
+        </ul>
+      </div>
     ),
   },
   {
@@ -23,8 +32,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>MS Data Analytics, National College of Ireland</li>
+        <li>BS Computer Science, FAST NUCES</li>
       </ul>
     ),
   },
@@ -60,8 +69,8 @@ const AboutSection = () => {
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             About Me 📚
           </h2>
-          <p className="text-sm md:text-lg lg:text-xl">
-            I am a fullstack developer
+          <p className="text-sm lg:text-lg">
+          Full-Stack Developer with 2 years of hands-on experience building scalable web applications and data-driven solutions. My expertise spans modern JavaScript frameworks like ReactJS, NodeJS, and NextJS, alongside strong command of SQL and cloud platforms such as AWS and Azure. I’ve worked on a wide range of projects—from blockchain-based DApps to AI-powered systems—leveraging technologies like Docker, CI/CD pipelines, and machine learning models.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -86,7 +95,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-4 text-sm md:text-xl">
+          <div className="mt-4 text-sm lg:text-xl">
             {TAB_DATA.find((t) => t.id == tab)?.content}
           </div>
         </div>
