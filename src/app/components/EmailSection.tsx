@@ -17,10 +17,14 @@ const EmailSection = () => {
     window.location.href = `mailto:${email}?body=${body}&subject=${sub}`;
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    handleSendMail(e.target.subject.value, e.target.message.value);
+    const form = e.currentTarget;
+    handleSendMail(
+      (form.elements.namedItem("subject") as HTMLInputElement).value,
+      (form.elements.namedItem("message") as HTMLInputElement).value
+    );
   };
 
   return (
@@ -40,10 +44,10 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href={github || 'https://github.com'}>
+          <Link href={github || "https://github.com"}>
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href={linkdin || 'https://www.linkedin.com'}>
+          <Link href={linkdin || "https://www.linkedin.com"}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
