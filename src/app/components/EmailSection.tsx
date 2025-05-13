@@ -6,8 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-
   const email = process.env.NEXT_PUBLIC_EMAIL_ADDR;
+  const linkdin = process.env.NEXT_PUBLIC_LINKDIN_URL;
+  const github = process.env.NEXT_PUBLIC_GITHUB_URL;
 
   const handleSendMail = (subject: string, message: string) => {
     const sub = encodeURIComponent(subject);
@@ -39,10 +40,10 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href={github || 'https://github.com'}>
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href={linkdin || 'https://www.linkedin.com'}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>

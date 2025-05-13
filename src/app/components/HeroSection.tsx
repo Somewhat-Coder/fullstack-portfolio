@@ -7,11 +7,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const HeroSection = () => {
+  const linkedinurl = process.env.NEXT_PUBLIC_LINKDIN_URL;
   const openToastBox = (message: string) => {
     toast.success(message);
   };
   const handleHireMe = () => {
-    window.open("https://www.linkedin.com/in/sammamsohail/", "_blank");
+    window.open(linkedinurl, "_blank");
     openToastBox("Linkedin Opened in New tab 🥂");
   };
 
@@ -43,9 +44,9 @@ const HeroSection = () => {
                 1000,
                 "Web developer",
                 1000,
-                "Mobile developer",
+                "Frontend developer",
                 1000,
-                "UI/UX Designer",
+                "Backend developer",
                 1000,
               ]}
               wrapper="span"
@@ -54,7 +55,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            This is a dummy text
+          Blending front-end finesse with back-end power and data-driven thinking.
           </p>
           <div className="flex sm:flex-row flex-col items-center justify-start sm:gap-x-4 gap-y-4">
             <button
