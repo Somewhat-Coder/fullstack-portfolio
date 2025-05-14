@@ -55,7 +55,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Blending front-end finesse with back-end power and data-driven thinking.
+            Blending front-end finesse with back-end power and data-driven
+            thinking.
           </p>
           <div className="flex sm:flex-row flex-col items-center justify-start sm:gap-x-4 gap-y-4">
             <button

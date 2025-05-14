@@ -33,7 +33,7 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:py-8 py-2 gap-4 relative"
     >
       <div className="bg-radial-[at_1%_1%] from-purple-300 sm:from-purple-500 to-transparent to-90% rounded-full h-80 w-80 z-1 blur-xl absolute top-3/4 md:top-1/2 -left-4 transform -translate-x-1/2 md:-translate-x-1/4 -translate-y-1/2 pointer-events-none"></div>
-      <div className="z-10">
+      <div className="z-1">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect 🤝
         </h5>
