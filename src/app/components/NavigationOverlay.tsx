@@ -10,8 +10,8 @@ const NavigationOverlay = ({
   return (
     <ul className="flex flex-col py-3 items-center text-md">
       {links.map((link, index: number) => (
-        <div className="w-1/6 text-center">
-          <li key={index}>
+        <div className="w-1/6 text-center" key={index}>
+          <li>
             <NavLink href={link.path} title={link.title} />
           </li>
           <hr className="border-1/2 w-full border-slate-400"/>
